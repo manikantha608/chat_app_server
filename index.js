@@ -9,7 +9,7 @@ const { app, server } = require('./socket/index')
 
 // const app = express() 
 app.use(cors({
-    origin : process.env.FRONTEND_URL,
+    origin : ['http://localhost:3000', 'https://chat-app-client-five-steel.vercel.app'],
     credentials : true
 }))
 app.use(express.json())
